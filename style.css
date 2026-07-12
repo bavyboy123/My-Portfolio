@@ -1,170 +1,234 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
 
-html{
-    scroll-behavior:smooth;
-}
 
 body{
-    background:#0d1117;
-    color:white;
+
+background:#0b1120;
+color:white;
+
 }
 
-header{
-    min-height:100vh;
-    padding:30px 10%;
-}
 
 nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+
+display:flex;
+justify-content:space-between;
+padding:30px 10%;
+
 }
+
 
 .logo{
-    color:#00bfff;
-    font-size:30px;
+
+font-size:30px;
+color:#00d4ff;
+
 }
+
 
 nav ul{
-    display:flex;
-    list-style:none;
-    gap:30px;
+
+display:flex;
+gap:30px;
+list-style:none;
+
 }
+
 
 nav a{
-    color:white;
-    text-decoration:none;
-    transition:.3s;
+
+color:white;
+text-decoration:none;
+
 }
 
-nav a:hover{
-    color:#00bfff;
-}
 
 .hero{
-    height:80vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:50px 10%;
+
 }
+
+
+
+.hero-text{
+
+max-width:600px;
+
+}
+
 
 .hero h1{
-    font-size:60px;
-    margin-bottom:20px;
+
+font-size:60px;
+line-height:1.1;
+
 }
 
-.hero span{
-    color:#00bfff;
-}
 
 .hero p{
-    max-width:600px;
-    font-size:20px;
-    margin-bottom:30px;
-    color:#cfcfcf;
+
+font-size:20px;
+margin:25px 0;
+color:#ccc;
+
 }
 
-.btn{
-    display:inline-block;
-    background:#00bfff;
-    color:white;
-    text-decoration:none;
-    padding:15px 35px;
-    border-radius:8px;
-    font-weight:bold;
-    transition:.3s;
+
+.hero-image{
+
+width:350px;
+border-radius:50%;
+
 }
 
-.btn:hover{
-    background:#0099cc;
+
+.button{
+
+background:#00d4ff;
+padding:15px 35px;
+border-radius:30px;
+color:black;
+text-decoration:none;
+font-weight:bold;
+
 }
+
+
 
 section{
-    padding:80px 10%;
+
+padding:80px 10%;
+text-align:center;
+
 }
 
-section h2{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:40px;
+
+h2{
+
+font-size:40px;
+margin-bottom:30px;
+
 }
 
-#about p{
-    text-align:center;
-    max-width:700px;
-    margin:auto;
-    line-height:1.8;
+
+
+.cards,.projects,.before-after{
+
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+
 }
 
-.skills{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-top:40px;
+
+
+.card,.project{
+
+background:#151e33;
+padding:30px;
+border-radius:15px;
+width:300px;
+
+transition:.3s;
+
 }
 
-.skill{
-    background:#161b22;
-    padding:15px 25px;
-    border-radius:8px;
+
+.card:hover,.project:hover{
+
+transform:translateY(-10px);
+
 }
 
-.project-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
+
+
+.project img{
+
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+
 }
 
-.card{
-    background:#161b22;
-    padding:30px;
-    border-radius:10px;
-    transition:.3s;
+
+.before-after img{
+
+width:400px;
+border-radius:15px;
+
 }
 
-.card:hover{
-    transform:translateY(-10px);
+
+
+.github{
+
+display:inline-block;
+margin-top:30px;
+background:white;
+color:black;
+padding:15px 30px;
+border-radius:30px;
+text-decoration:none;
+
 }
 
-.card h3{
-    margin-bottom:15px;
-}
 
-.card p{
-    color:#cccccc;
-    margin-bottom:20px;
-}
-
-.card button{
-    background:#00bfff;
-    border:none;
-    color:white;
-    padding:12px 25px;
-    border-radius:5px;
-    cursor:pointer;
-}
-
-.card button:hover{
-    background:#0099cc;
-}
-
-#contact{
-    text-align:center;
-}
-
-#contact p{
-    margin-bottom:20px;
-}
 
 footer{
-    text-align:center;
-    padding:25px;
-    background:#161b22;
-    color:#888;
+
+text-align:center;
+padding:30px;
+background:#050914;
+
+}
+
+
+
+/* Animation */
+
+.hidden{
+
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+
+}
+
+
+.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+
+
+@media(max-width:800px){
+
+.hero{
+
+flex-direction:column;
+
+}
+
+
+.hero h1{
+
+font-size:40px;
+
+}
+
 }
