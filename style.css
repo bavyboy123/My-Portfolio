@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0d1117;
+    color:white;
+}
+
+header{
+    min-height:100vh;
+    padding:30px 10%;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#00bfff;
+    font-size:30px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00bfff;
+}
+
+.hero{
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:#00bfff;
+}
+
+.hero p{
+    max-width:600px;
+    font-size:20px;
+    margin-bottom:30px;
+    color:#cfcfcf;
+}
+
+.btn{
+    display:inline-block;
+    background:#00bfff;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0099cc;
+}
+
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+#about p{
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.skills{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.skill{
+    background:#161b22;
+    padding:15px 25px;
+    border-radius:8px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#161b22;
+    padding:30px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cccccc;
+    margin-bottom:20px;
+}
+
+.card button{
+    background:#00bfff;
+    border:none;
+    color:white;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#0099cc;
+}
+
+#contact{
+    text-align:center;
+}
+
+#contact p{
+    margin-bottom:20px;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#161b22;
+    color:#888;
+}
